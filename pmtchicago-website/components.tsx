@@ -11,7 +11,9 @@ const Heading = styled.h1`
   font-family: 'Times New Roman', Times, serif;
 `;
 
-export default function Layout({ children }) {
+import React, { ReactNode } from 'react';
+
+export default function Layout({ children }: { children: ReactNode }) {
   return (
     <Container>
       <Heading>PMT Chicago</Heading>
